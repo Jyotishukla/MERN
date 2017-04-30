@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT prices (pricing)+>
+<!ELEMENT pricing ( price_id, location_id_from, location_id_to, price, location_code_from, location_code_to, location_name_from, location_name_to, cutomer_id ) >
+<!ELEMENT price_id (#PCDATA)>
+<!ELEMENT location_id_from (#PCDATA)>
+<!ELEMENT location_id_to (#PCDATA)>
+<!ELEMENT price (#PCDATA)>
+<!ELEMENT location_code_from (#PCDATA)>
+<!ELEMENT location_code_to (#PCDATA)>
+<!ELEMENT location_name_from (#PCDATA)>
+<!ELEMENT location_name_to (#PCDATA)>
+<!ELEMENT cutomer_id (#PCDATA)>

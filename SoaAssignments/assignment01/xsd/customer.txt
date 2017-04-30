@@ -1,0 +1,37 @@
+<?xml version = "1.0"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name='customers'>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name='customer' minOccurs='0' maxOccurs='unbounded' />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name='customer'>
+	<xs:complexType>
+		<xs:sequence>
+			<xs:element name="customer_id" type="xs:positiveInteger" />
+			<xs:element name="customer_title" type="xs:string" />
+			<xs:element name="business_name" type="xs:string" />
+			<xs:element name="billing_address" type="xs:string" />
+			<xs:element name="city" type="xs:string" />
+			<xs:element name="state" type="xs:string" />
+			<xs:element name="postal_code" type="xs:positiveInteger" />
+			<xs:element name="country" type="xs:string" />
+			<xs:element name="phone_number" type="xs:string" />
+			<xs:element name="postal_code" type="xs:positiveInteger" />
+			<xs:element name="cell_number" type="xs:positiveInteger" />
+			<xs:element name="other_number" type="xs:positiveInteger" />
+			<xs:element name="fax_number" type="xs:positiveInteger" />
+			<xs:element name="email_address" type="xs:string" />
+			<xs:element name="customer_type" type="xs:string" />
+			<xs:element name="company_name" type="xs:string" />
+			<xs:element name="contact_name" type="xs:string" />
+			<xs:element name="alternate_contact_name" type="xs:string" />
+			<xs:element name="date_entered" type="xs:date" />
+		</xs:sequence>
+		 </xs:complexType>	
+		 </xs:element>	 
+</xs:schema>

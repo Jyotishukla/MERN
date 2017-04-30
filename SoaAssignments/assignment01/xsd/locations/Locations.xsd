@@ -1,0 +1,33 @@
+<?xml version = "1.0"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name='locations'>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name='location' minOccurs='0' maxOccurs='unbounded' />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name='location'>
+	<xs:complexType>
+		<xs:sequence>
+			<xs:element name="location_id" type="xs:string" />
+			<xs:element name="location_name" type="xs:string" />
+			<xs:element name="location_code" type="xs:string" />
+			<xs:element name="is_auction" type="xs:string" />
+			<xs:element name="customer_id" type="xs:positiveInteger" />
+			<xs:element name="address_street1" type="xs:string" />
+			<xs:element name="address_street2" type="xs:string" />
+			<xs:element name="city" type="xs:string" />
+			<xs:element name="state" type="xs:string" />
+			<xs:element name="postal_code" type="xs:positiveInteger" />
+			<xs:element name="region" type="xs:string" />
+			<xs:element name="location_contact_name" type="xs:string" />
+			<xs:element name="location_phone" type="xs:positiveInteger" />
+			<xs:element name="location_fax_number" type="xs:positiveInteger" />
+			<xs:element name="location_email" type="xs:string" />
+		</xs:sequence>
+		 </xs:complexType>	
+		 </xs:element>	 
+</xs:schema>

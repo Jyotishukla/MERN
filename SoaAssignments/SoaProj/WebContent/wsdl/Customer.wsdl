@@ -1,0 +1,1710 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions targetNamespace="http://model" xmlns:apachesoap="http://xml.apache.org/xml-soap" xmlns:impl="http://model" xmlns:intf="http://model" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<!--WSDL created by Apache Axis version: 1.4
+Built on Apr 22, 2006 (06:55:48 PDT)-->
+ <wsdl:types>
+  <schema elementFormDefault="qualified" targetNamespace="http://model" xmlns="http://www.w3.org/2001/XMLSchema">
+   <element name="setCustomer_type">
+    <complexType>
+     <sequence>
+      <element name="customer_type" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="setCustomer_typeResponse">
+    <complexType/>
+   </element>
+   <element name="setAddress_id">
+    <complexType>
+     <sequence>
+      <element name="address_id" type="xsd:int"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="setAddress_idResponse">
+    <complexType/>
+   </element>
+   <element name="setCell_number">
+    <complexType>
+     <sequence>
+      <element name="cell_number" type="xsd:int"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="setCell_numberResponse">
+    <complexType/>
+   </element>
+   <element name="getCustomer_id">
+    <complexType/>
+   </element>
+   <element name="getCustomer_idResponse">
+    <complexType>
+     <sequence>
+      <element name="getCustomer_idReturn" type="xsd:int"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="getCompany_name">
+    <complexType/>
+   </element>
+   <element name="getCompany_nameResponse">
+    <complexType>
+     <sequence>
+      <element name="getCompany_nameReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="getContact_name">
+    <complexType/>
+   </element>
+   <element name="getContact_nameResponse">
+    <complexType>
+     <sequence>
+      <element name="getContact_nameReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="setContact_name">
+    <complexType>
+     <sequence>
+      <element name="contact_name" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="setContact_nameResponse">
+    <complexType/>
+   </element>
+   <element name="getAddress_id">
+    <complexType/>
+   </element>
+   <element name="getAddress_idResponse">
+    <complexType>
+     <sequence>
+      <element name="getAddress_idReturn" type="xsd:int"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="getBuisness_name">
+    <complexType/>
+   </element>
+   <element name="getBuisness_nameResponse">
+    <complexType>
+     <sequence>
+      <element name="getBuisness_nameReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="getPhone_no">
+    <complexType/>
+   </element>
+   <element name="getPhone_noResponse">
+    <complexType>
+     <sequence>
+      <element name="getPhone_noReturn" type="xsd:int"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="setOther_number">
+    <complexType>
+     <sequence>
+      <element name="other_number" type="xsd:int"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="setOther_numberResponse">
+    <complexType/>
+   </element>
+   <element name="getCustomer_type">
+    <complexType/>
+   </element>
+   <element name="getCustomer_typeResponse">
+    <complexType>
+     <sequence>
+      <element name="getCustomer_typeReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="getCell_number">
+    <complexType/>
+   </element>
+   <element name="getCell_numberResponse">
+    <complexType>
+     <sequence>
+      <element name="getCell_numberReturn" type="xsd:int"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="getFax_number">
+    <complexType/>
+   </element>
+   <element name="getFax_numberResponse">
+    <complexType>
+     <sequence>
+      <element name="getFax_numberReturn" type="xsd:int"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="setDate_entered">
+    <complexType>
+     <sequence>
+      <element name="date_entered" type="xsd:dateTime"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="setDate_enteredResponse">
+    <complexType/>
+   </element>
+   <element name="getOther_number">
+    <complexType/>
+   </element>
+   <element name="getOther_numberResponse">
+    <complexType>
+     <sequence>
+      <element name="getOther_numberReturn" type="xsd:int"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="setPhone_no">
+    <complexType>
+     <sequence>
+      <element name="phone_no" type="xsd:int"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="setPhone_noResponse">
+    <complexType/>
+   </element>
+   <element name="getEmail_address">
+    <complexType/>
+   </element>
+   <element name="getEmail_addressResponse">
+    <complexType>
+     <sequence>
+      <element name="getEmail_addressReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="setFax_number">
+    <complexType>
+     <sequence>
+      <element name="fax_number" type="xsd:int"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="setFax_numberResponse">
+    <complexType/>
+   </element>
+   <element name="setBuisness_name">
+    <complexType>
+     <sequence>
+      <element name="buisness_name" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="setBuisness_nameResponse">
+    <complexType/>
+   </element>
+   <element name="setEmail_address">
+    <complexType>
+     <sequence>
+      <element name="email_address" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="setEmail_addressResponse">
+    <complexType/>
+   </element>
+   <element name="getDate_entered">
+    <complexType/>
+   </element>
+   <element name="getDate_enteredResponse">
+    <complexType>
+     <sequence>
+      <element name="getDate_enteredReturn" type="xsd:dateTime"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="setCustomer_id">
+    <complexType>
+     <sequence>
+      <element name="customer_id" type="xsd:int"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="setCustomer_idResponse">
+    <complexType/>
+   </element>
+   <element name="setCompany_name">
+    <complexType>
+     <sequence>
+      <element name="company_name" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="setCompany_nameResponse">
+    <complexType/>
+   </element>
+   <element name="setAlternate_contactname">
+    <complexType>
+     <sequence>
+      <element name="alternate_contactname" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="setAlternate_contactnameResponse">
+    <complexType/>
+   </element>
+   <element name="getBilling_address">
+    <complexType/>
+   </element>
+   <element name="getBilling_addressResponse">
+    <complexType>
+     <sequence>
+      <element name="getBilling_addressReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="setCustomer_title">
+    <complexType>
+     <sequence>
+      <element name="customer_title" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="setCustomer_titleResponse">
+    <complexType/>
+   </element>
+   <element name="setBilling_address">
+    <complexType>
+     <sequence>
+      <element name="billing_address" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="setBilling_addressResponse">
+    <complexType/>
+   </element>
+   <element name="getAlternate_contactname">
+    <complexType/>
+   </element>
+   <element name="getAlternate_contactnameResponse">
+    <complexType>
+     <sequence>
+      <element name="getAlternate_contactnameReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="getCustomer_title">
+    <complexType/>
+   </element>
+   <element name="getCustomer_titleResponse">
+    <complexType>
+     <sequence>
+      <element name="getCustomer_titleReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+  </schema>
+ </wsdl:types>
+
+   <wsdl:message name="setContact_nameResponse">
+
+      <wsdl:part element="impl:setContact_nameResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getCompany_nameResponse">
+
+      <wsdl:part element="impl:getCompany_nameResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getOther_numberRequest">
+
+      <wsdl:part element="impl:getOther_number" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="setAddress_idResponse">
+
+      <wsdl:part element="impl:setAddress_idResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getPhone_noRequest">
+
+      <wsdl:part element="impl:getPhone_no" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getCustomer_titleResponse">
+
+      <wsdl:part element="impl:getCustomer_titleResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="setCustomer_idRequest">
+
+      <wsdl:part element="impl:setCustomer_id" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getAlternate_contactnameRequest">
+
+      <wsdl:part element="impl:getAlternate_contactname" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="setAlternate_contactnameRequest">
+
+      <wsdl:part element="impl:setAlternate_contactname" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="setDate_enteredRequest">
+
+      <wsdl:part element="impl:setDate_entered" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getDate_enteredResponse">
+
+      <wsdl:part element="impl:getDate_enteredResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="setEmail_addressRequest">
+
+      <wsdl:part element="impl:setEmail_address" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getCustomer_idRequest">
+
+      <wsdl:part element="impl:getCustomer_id" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getBuisness_nameResponse">
+
+      <wsdl:part element="impl:getBuisness_nameResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getBuisness_nameRequest">
+
+      <wsdl:part element="impl:getBuisness_name" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getCustomer_typeResponse">
+
+      <wsdl:part element="impl:getCustomer_typeResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getEmail_addressResponse">
+
+      <wsdl:part element="impl:getEmail_addressResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="setCell_numberRequest">
+
+      <wsdl:part element="impl:setCell_number" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getCustomer_typeRequest">
+
+      <wsdl:part element="impl:getCustomer_type" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getCompany_nameRequest">
+
+      <wsdl:part element="impl:getCompany_name" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getCustomer_titleRequest">
+
+      <wsdl:part element="impl:getCustomer_title" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getCell_numberResponse">
+
+      <wsdl:part element="impl:getCell_numberResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getContact_nameResponse">
+
+      <wsdl:part element="impl:getContact_nameResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="setDate_enteredResponse">
+
+      <wsdl:part element="impl:setDate_enteredResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="setContact_nameRequest">
+
+      <wsdl:part element="impl:setContact_name" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getAddress_idRequest">
+
+      <wsdl:part element="impl:getAddress_id" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="setCompany_nameRequest">
+
+      <wsdl:part element="impl:setCompany_name" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="setCompany_nameResponse">
+
+      <wsdl:part element="impl:setCompany_nameResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getCell_numberRequest">
+
+      <wsdl:part element="impl:getCell_number" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="setBuisness_nameResponse">
+
+      <wsdl:part element="impl:setBuisness_nameResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="setCustomer_idResponse">
+
+      <wsdl:part element="impl:setCustomer_idResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getAlternate_contactnameResponse">
+
+      <wsdl:part element="impl:getAlternate_contactnameResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="setBilling_addressRequest">
+
+      <wsdl:part element="impl:setBilling_address" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="setOther_numberResponse">
+
+      <wsdl:part element="impl:setOther_numberResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="setEmail_addressResponse">
+
+      <wsdl:part element="impl:setEmail_addressResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="setCustomer_typeRequest">
+
+      <wsdl:part element="impl:setCustomer_type" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="setFax_numberResponse">
+
+      <wsdl:part element="impl:setFax_numberResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getFax_numberRequest">
+
+      <wsdl:part element="impl:getFax_number" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="setPhone_noRequest">
+
+      <wsdl:part element="impl:setPhone_no" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="setBilling_addressResponse">
+
+      <wsdl:part element="impl:setBilling_addressResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getAddress_idResponse">
+
+      <wsdl:part element="impl:getAddress_idResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getDate_enteredRequest">
+
+      <wsdl:part element="impl:getDate_entered" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="setCustomer_titleResponse">
+
+      <wsdl:part element="impl:setCustomer_titleResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="setBuisness_nameRequest">
+
+      <wsdl:part element="impl:setBuisness_name" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="setAddress_idRequest">
+
+      <wsdl:part element="impl:setAddress_id" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getEmail_addressRequest">
+
+      <wsdl:part element="impl:getEmail_address" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="setAlternate_contactnameResponse">
+
+      <wsdl:part element="impl:setAlternate_contactnameResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getFax_numberResponse">
+
+      <wsdl:part element="impl:getFax_numberResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="setFax_numberRequest">
+
+      <wsdl:part element="impl:setFax_number" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getPhone_noResponse">
+
+      <wsdl:part element="impl:getPhone_noResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="setCell_numberResponse">
+
+      <wsdl:part element="impl:setCell_numberResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getCustomer_idResponse">
+
+      <wsdl:part element="impl:getCustomer_idResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getContact_nameRequest">
+
+      <wsdl:part element="impl:getContact_name" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getOther_numberResponse">
+
+      <wsdl:part element="impl:getOther_numberResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="setPhone_noResponse">
+
+      <wsdl:part element="impl:setPhone_noResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="setCustomer_typeResponse">
+
+      <wsdl:part element="impl:setCustomer_typeResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getBilling_addressRequest">
+
+      <wsdl:part element="impl:getBilling_address" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="setCustomer_titleRequest">
+
+      <wsdl:part element="impl:setCustomer_title" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="setOther_numberRequest">
+
+      <wsdl:part element="impl:setOther_number" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getBilling_addressResponse">
+
+      <wsdl:part element="impl:getBilling_addressResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:portType name="Customer">
+
+      <wsdl:operation name="setCustomer_type">
+
+         <wsdl:input message="impl:setCustomer_typeRequest" name="setCustomer_typeRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:setCustomer_typeResponse" name="setCustomer_typeResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="setAddress_id">
+
+         <wsdl:input message="impl:setAddress_idRequest" name="setAddress_idRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:setAddress_idResponse" name="setAddress_idResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="setCell_number">
+
+         <wsdl:input message="impl:setCell_numberRequest" name="setCell_numberRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:setCell_numberResponse" name="setCell_numberResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getCustomer_id">
+
+         <wsdl:input message="impl:getCustomer_idRequest" name="getCustomer_idRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:getCustomer_idResponse" name="getCustomer_idResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getCompany_name">
+
+         <wsdl:input message="impl:getCompany_nameRequest" name="getCompany_nameRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:getCompany_nameResponse" name="getCompany_nameResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getContact_name">
+
+         <wsdl:input message="impl:getContact_nameRequest" name="getContact_nameRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:getContact_nameResponse" name="getContact_nameResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="setContact_name">
+
+         <wsdl:input message="impl:setContact_nameRequest" name="setContact_nameRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:setContact_nameResponse" name="setContact_nameResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getAddress_id">
+
+         <wsdl:input message="impl:getAddress_idRequest" name="getAddress_idRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:getAddress_idResponse" name="getAddress_idResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getBuisness_name">
+
+         <wsdl:input message="impl:getBuisness_nameRequest" name="getBuisness_nameRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:getBuisness_nameResponse" name="getBuisness_nameResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getPhone_no">
+
+         <wsdl:input message="impl:getPhone_noRequest" name="getPhone_noRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:getPhone_noResponse" name="getPhone_noResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="setOther_number">
+
+         <wsdl:input message="impl:setOther_numberRequest" name="setOther_numberRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:setOther_numberResponse" name="setOther_numberResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getCustomer_type">
+
+         <wsdl:input message="impl:getCustomer_typeRequest" name="getCustomer_typeRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:getCustomer_typeResponse" name="getCustomer_typeResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getCell_number">
+
+         <wsdl:input message="impl:getCell_numberRequest" name="getCell_numberRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:getCell_numberResponse" name="getCell_numberResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getFax_number">
+
+         <wsdl:input message="impl:getFax_numberRequest" name="getFax_numberRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:getFax_numberResponse" name="getFax_numberResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="setDate_entered">
+
+         <wsdl:input message="impl:setDate_enteredRequest" name="setDate_enteredRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:setDate_enteredResponse" name="setDate_enteredResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getOther_number">
+
+         <wsdl:input message="impl:getOther_numberRequest" name="getOther_numberRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:getOther_numberResponse" name="getOther_numberResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="setPhone_no">
+
+         <wsdl:input message="impl:setPhone_noRequest" name="setPhone_noRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:setPhone_noResponse" name="setPhone_noResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getEmail_address">
+
+         <wsdl:input message="impl:getEmail_addressRequest" name="getEmail_addressRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:getEmail_addressResponse" name="getEmail_addressResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="setFax_number">
+
+         <wsdl:input message="impl:setFax_numberRequest" name="setFax_numberRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:setFax_numberResponse" name="setFax_numberResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="setBuisness_name">
+
+         <wsdl:input message="impl:setBuisness_nameRequest" name="setBuisness_nameRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:setBuisness_nameResponse" name="setBuisness_nameResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="setEmail_address">
+
+         <wsdl:input message="impl:setEmail_addressRequest" name="setEmail_addressRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:setEmail_addressResponse" name="setEmail_addressResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getDate_entered">
+
+         <wsdl:input message="impl:getDate_enteredRequest" name="getDate_enteredRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:getDate_enteredResponse" name="getDate_enteredResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="setCustomer_id">
+
+         <wsdl:input message="impl:setCustomer_idRequest" name="setCustomer_idRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:setCustomer_idResponse" name="setCustomer_idResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="setCompany_name">
+
+         <wsdl:input message="impl:setCompany_nameRequest" name="setCompany_nameRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:setCompany_nameResponse" name="setCompany_nameResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="setAlternate_contactname">
+
+         <wsdl:input message="impl:setAlternate_contactnameRequest" name="setAlternate_contactnameRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:setAlternate_contactnameResponse" name="setAlternate_contactnameResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getBilling_address">
+
+         <wsdl:input message="impl:getBilling_addressRequest" name="getBilling_addressRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:getBilling_addressResponse" name="getBilling_addressResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="setCustomer_title">
+
+         <wsdl:input message="impl:setCustomer_titleRequest" name="setCustomer_titleRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:setCustomer_titleResponse" name="setCustomer_titleResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="setBilling_address">
+
+         <wsdl:input message="impl:setBilling_addressRequest" name="setBilling_addressRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:setBilling_addressResponse" name="setBilling_addressResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getAlternate_contactname">
+
+         <wsdl:input message="impl:getAlternate_contactnameRequest" name="getAlternate_contactnameRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:getAlternate_contactnameResponse" name="getAlternate_contactnameResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getCustomer_title">
+
+         <wsdl:input message="impl:getCustomer_titleRequest" name="getCustomer_titleRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:getCustomer_titleResponse" name="getCustomer_titleResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+   </wsdl:portType>
+
+   <wsdl:binding name="CustomerSoapBinding" type="impl:Customer">
+
+      <wsdlsoap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+
+      <wsdl:operation name="setCustomer_type">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="setCustomer_typeRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="setCustomer_typeResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="setAddress_id">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="setAddress_idRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="setAddress_idResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="setCell_number">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="setCell_numberRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="setCell_numberResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getCustomer_id">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="getCustomer_idRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="getCustomer_idResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getCompany_name">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="getCompany_nameRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="getCompany_nameResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getContact_name">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="getContact_nameRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="getContact_nameResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="setContact_name">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="setContact_nameRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="setContact_nameResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getAddress_id">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="getAddress_idRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="getAddress_idResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getBuisness_name">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="getBuisness_nameRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="getBuisness_nameResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getPhone_no">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="getPhone_noRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="getPhone_noResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="setOther_number">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="setOther_numberRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="setOther_numberResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getCustomer_type">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="getCustomer_typeRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="getCustomer_typeResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getCell_number">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="getCell_numberRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="getCell_numberResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getFax_number">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="getFax_numberRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="getFax_numberResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="setDate_entered">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="setDate_enteredRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="setDate_enteredResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getOther_number">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="getOther_numberRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="getOther_numberResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="setPhone_no">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="setPhone_noRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="setPhone_noResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getEmail_address">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="getEmail_addressRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="getEmail_addressResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="setFax_number">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="setFax_numberRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="setFax_numberResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="setBuisness_name">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="setBuisness_nameRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="setBuisness_nameResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="setEmail_address">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="setEmail_addressRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="setEmail_addressResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getDate_entered">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="getDate_enteredRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="getDate_enteredResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="setCustomer_id">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="setCustomer_idRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="setCustomer_idResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="setCompany_name">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="setCompany_nameRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="setCompany_nameResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="setAlternate_contactname">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="setAlternate_contactnameRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="setAlternate_contactnameResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getBilling_address">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="getBilling_addressRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="getBilling_addressResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="setCustomer_title">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="setCustomer_titleRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="setCustomer_titleResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="setBilling_address">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="setBilling_addressRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="setBilling_addressResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getAlternate_contactname">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="getAlternate_contactnameRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="getAlternate_contactnameResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getCustomer_title">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="getCustomer_titleRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="getCustomer_titleResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+   </wsdl:binding>
+
+   <wsdl:service name="CustomerService">
+
+      <wsdl:port binding="impl:CustomerSoapBinding" name="Customer">
+
+         <wsdlsoap:address location="http://localhost:9090/SoaProj/services/Customer"/>
+
+      </wsdl:port>
+
+   </wsdl:service>
+
+</wsdl:definitions>

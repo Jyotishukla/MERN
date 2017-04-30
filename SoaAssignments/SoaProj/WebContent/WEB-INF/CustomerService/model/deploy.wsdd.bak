@@ -1,0 +1,101 @@
+<!-- Use this file to deploy some handlers/chains and services      -->
+<!-- Two ways to do this:                                           -->
+<!--   java org.apache.axis.client.AdminClient deploy.wsdd          -->
+<!--      after the axis server is running                          -->
+<!-- or                                                             -->
+<!--   java org.apache.axis.utils.Admin client|server deploy.wsdd   -->
+<!--      from the same directory that the Axis engine runs         -->
+
+<deployment
+    xmlns="http://xml.apache.org/axis/wsdd/"
+    xmlns:java="http://xml.apache.org/axis/wsdd/providers/java">
+
+  <!-- Services from CustomerService WSDL service -->
+
+  <service name="Customer" provider="java:RPC" style="wrapped" use="literal">
+      <parameter name="wsdlTargetNamespace" value="http://model"/>
+      <parameter name="wsdlServiceElement" value="CustomerService"/>
+      <parameter name="schemaQualified" value="http://model"/>
+      <parameter name="wsdlServicePort" value="Customer"/>
+      <parameter name="className" value="model.CustomerSoapBindingImpl"/>
+      <parameter name="wsdlPortType" value="Customer"/>
+      <parameter name="typeMappingVersion" value="1.2"/>
+      <operation name="setCustomer_type" qname="operNS:setCustomer_type" xmlns:operNS="http://model" soapAction="" >
+        <parameter qname="pns:customer_type" xmlns:pns="http://model" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <operation name="setAddress_id" qname="operNS:setAddress_id" xmlns:operNS="http://model" soapAction="" >
+        <parameter qname="pns:address_id" xmlns:pns="http://model" type="tns:int" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <operation name="setCell_number" qname="operNS:setCell_number" xmlns:operNS="http://model" soapAction="" >
+        <parameter qname="pns:cell_number" xmlns:pns="http://model" type="tns:int" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <operation name="getCustomer_id" qname="operNS:getCustomer_id" xmlns:operNS="http://model" returnQName="retNS:getCustomer_idReturn" xmlns:retNS="http://model" returnType="rtns:int" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+      </operation>
+      <operation name="getCompany_name" qname="operNS:getCompany_name" xmlns:operNS="http://model" returnQName="retNS:getCompany_nameReturn" xmlns:retNS="http://model" returnType="rtns:string" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+      </operation>
+      <operation name="getContact_name" qname="operNS:getContact_name" xmlns:operNS="http://model" returnQName="retNS:getContact_nameReturn" xmlns:retNS="http://model" returnType="rtns:string" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+      </operation>
+      <operation name="setContact_name" qname="operNS:setContact_name" xmlns:operNS="http://model" soapAction="" >
+        <parameter qname="pns:contact_name" xmlns:pns="http://model" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <operation name="getAddress_id" qname="operNS:getAddress_id" xmlns:operNS="http://model" returnQName="retNS:getAddress_idReturn" xmlns:retNS="http://model" returnType="rtns:int" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+      </operation>
+      <operation name="getBuisness_name" qname="operNS:getBuisness_name" xmlns:operNS="http://model" returnQName="retNS:getBuisness_nameReturn" xmlns:retNS="http://model" returnType="rtns:string" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+      </operation>
+      <operation name="getPhone_no" qname="operNS:getPhone_no" xmlns:operNS="http://model" returnQName="retNS:getPhone_noReturn" xmlns:retNS="http://model" returnType="rtns:int" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+      </operation>
+      <operation name="setOther_number" qname="operNS:setOther_number" xmlns:operNS="http://model" soapAction="" >
+        <parameter qname="pns:other_number" xmlns:pns="http://model" type="tns:int" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <operation name="getCustomer_type" qname="operNS:getCustomer_type" xmlns:operNS="http://model" returnQName="retNS:getCustomer_typeReturn" xmlns:retNS="http://model" returnType="rtns:string" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+      </operation>
+      <operation name="getCell_number" qname="operNS:getCell_number" xmlns:operNS="http://model" returnQName="retNS:getCell_numberReturn" xmlns:retNS="http://model" returnType="rtns:int" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+      </operation>
+      <operation name="getFax_number" qname="operNS:getFax_number" xmlns:operNS="http://model" returnQName="retNS:getFax_numberReturn" xmlns:retNS="http://model" returnType="rtns:int" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+      </operation>
+      <operation name="setDate_entered" qname="operNS:setDate_entered" xmlns:operNS="http://model" soapAction="" >
+        <parameter qname="pns:date_entered" xmlns:pns="http://model" type="tns:dateTime" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <operation name="getOther_number" qname="operNS:getOther_number" xmlns:operNS="http://model" returnQName="retNS:getOther_numberReturn" xmlns:retNS="http://model" returnType="rtns:int" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+      </operation>
+      <operation name="setPhone_no" qname="operNS:setPhone_no" xmlns:operNS="http://model" soapAction="" >
+        <parameter qname="pns:phone_no" xmlns:pns="http://model" type="tns:int" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <operation name="getEmail_address" qname="operNS:getEmail_address" xmlns:operNS="http://model" returnQName="retNS:getEmail_addressReturn" xmlns:retNS="http://model" returnType="rtns:string" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+      </operation>
+      <operation name="setFax_number" qname="operNS:setFax_number" xmlns:operNS="http://model" soapAction="" >
+        <parameter qname="pns:fax_number" xmlns:pns="http://model" type="tns:int" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <operation name="setBuisness_name" qname="operNS:setBuisness_name" xmlns:operNS="http://model" soapAction="" >
+        <parameter qname="pns:buisness_name" xmlns:pns="http://model" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <operation name="setEmail_address" qname="operNS:setEmail_address" xmlns:operNS="http://model" soapAction="" >
+        <parameter qname="pns:email_address" xmlns:pns="http://model" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <operation name="getDate_entered" qname="operNS:getDate_entered" xmlns:operNS="http://model" returnQName="retNS:getDate_enteredReturn" xmlns:retNS="http://model" returnType="rtns:dateTime" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+      </operation>
+      <operation name="setCustomer_id" qname="operNS:setCustomer_id" xmlns:operNS="http://model" soapAction="" >
+        <parameter qname="pns:customer_id" xmlns:pns="http://model" type="tns:int" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <operation name="setCompany_name" qname="operNS:setCompany_name" xmlns:operNS="http://model" soapAction="" >
+        <parameter qname="pns:company_name" xmlns:pns="http://model" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <operation name="setAlternate_contactname" qname="operNS:setAlternate_contactname" xmlns:operNS="http://model" soapAction="" >
+        <parameter qname="pns:alternate_contactname" xmlns:pns="http://model" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <operation name="getBilling_address" qname="operNS:getBilling_address" xmlns:operNS="http://model" returnQName="retNS:getBilling_addressReturn" xmlns:retNS="http://model" returnType="rtns:string" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+      </operation>
+      <operation name="setCustomer_title" qname="operNS:setCustomer_title" xmlns:operNS="http://model" soapAction="" >
+        <parameter qname="pns:customer_title" xmlns:pns="http://model" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <operation name="setBilling_address" qname="operNS:setBilling_address" xmlns:operNS="http://model" soapAction="" >
+        <parameter qname="pns:billing_address" xmlns:pns="http://model" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <operation name="getAlternate_contactname" qname="operNS:getAlternate_contactname" xmlns:operNS="http://model" returnQName="retNS:getAlternate_contactnameReturn" xmlns:retNS="http://model" returnType="rtns:string" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+      </operation>
+      <operation name="getCustomer_title" qname="operNS:getCustomer_title" xmlns:operNS="http://model" returnQName="retNS:getCustomer_titleReturn" xmlns:retNS="http://model" returnType="rtns:string" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+      </operation>
+      <parameter name="allowedMethods" value="setFax_number setCustomer_id setCustomer_type getAlternate_contactname setCell_number getCustomer_id getAddress_id setDate_entered setCustomer_title setEmail_address getCustomer_title getEmail_address setAddress_id getContact_name setOther_number setBilling_address getCustomer_type setBuisness_name getPhone_no getFax_number getBilling_address setContact_name getDate_entered setAlternate_contactname getCompany_name getOther_number setPhone_no getCell_number getBuisness_name setCompany_name"/>
+
+  </service>
+</deployment>

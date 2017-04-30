@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE transactions SYSTEM "transactions.dtd">
+<transactions>
+	<transaction>
+		<transaction_id>01</transaction_id>
+		<order_id>01</order_id>
+		<price_id>01</price_id>
+		<transaction_date>2016-07-13</transaction_date>
+		<transaction_description>ultima_chicago_columbus</transaction_description>
+		<transaction_amount>140</transaction_amount>
+		<make>BMW</make>
+		<model>X1</model>
+		<year>2009</year>
+		<employee_id>e_01</employee_id>
+		<truck_no>10</truck_no>
+		<discount>yes</discount>
+		<quality>1</quality>
+		<unit_price>35000</unit_price>
+		<driver_pric>50.00</driver_pric>
+		<vin>MJ29010KHHDKWJM780</vin>
+		<run_number>12345</run_number>
+		<special>NA</special>
+		<rate>35.00</rate>
+		<surcharge>6.00</surcharge>
+	</transaction>
+	
+	<transaction>
+		<transaction_id>02</transaction_id>
+		<order_id>02</order_id>
+		<price_id>02</price_id>
+		<transaction_date>2015-07-11</transaction_date>
+		<transaction_description>BMW_chicago_columbus</transaction_description>
+		<transaction_amount>150</transaction_amount>
+		<make>ULTIMA</make>
+		<model>X3</model>
+		<year>2010</year>
+		<employee_id>e_02</employee_id>
+		<truck_no>11</truck_no>
+		<discount>yes</discount>
+		<quality>2</quality>
+		<unit_price>7000</unit_price>
+		<driver_pric>76.00</driver_pric>
+		<vin>HDHGJ2867899NKJ919</vin>
+		<run_number>172738</run_number>
+		<special>NA</special>
+		<rate>23.00</rate>
+		<surcharge>4.00</surcharge>
+	</transaction>
+</transactions>

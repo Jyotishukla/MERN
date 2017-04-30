@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE payments SYSTEM "payments.dtd">
+<payments>
+	<payment>
+		<payment_id></payment_id>
+		<order_id></order_id>
+		<payment_method_id></payment_method_id>
+		<payment_amount></payment_amount>
+		<payment_date></payment_date>
+		<check_number></check_number>
+		<credit_card></credit_card>
+		<credit_card_number></credit_card_number>
+		<cardholder_name></cardholder_name>
+		<creditcard_exp_date></creditcard_exp_date>
+		<creaditcard_auth_num></creaditcard_auth_num>
+	</payment>
+</payments>

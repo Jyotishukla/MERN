@@ -1,0 +1,39 @@
+package publisher;
+
+import javax.xml.ws.Endpoint;
+import ws.*;
+
+public class TestPublisher {
+	public static final String URI = "http://localhost:8990/test1";
+	
+	public static void main(String[] args) {
+	    
+        //Create instance of service implementation
+        CustomerWS impl = new CustomerWS();
+        EmployeeWS impl2 = new EmployeeWS();
+        OrderWS impl3 = new OrderWS();
+        PriceWS impl4 = new PriceWS();
+        TruckWS impl5 = new TruckWS();
+        //Make available
+        Endpoint endpoint = Endpoint.publish(URI, impl);
+       // Endpoint endpoint2 = Endpoint.publish(URI, impl2);
+        Endpoint endpoint3 = Endpoint.publish(URI, impl3);
+        Endpoint endpoint4 = Endpoint.publish(URI, impl4);
+        Endpoint endpoint5 = Endpoint.publish(URI, impl5);
+        
+
+        //Test that it is available
+        boolean status = endpoint.isPublished();
+      //  boolean status2 = endpoint2.isPublished();
+        boolean status3 = endpoint3.isPublished();
+        boolean status4 = endpoint4.isPublished();
+        boolean status5 = endpoint5.isPublished();
+        System.out.println("Web service status = " + status );
+      //  System.out.println("Web service status = " + status2 );
+        System.out.println("Web service status = " + status3 );
+        System.out.println("Web service status = " + status4 );
+        System.out.println("Web service status = " + status5 );
+    }
+	
+
+}

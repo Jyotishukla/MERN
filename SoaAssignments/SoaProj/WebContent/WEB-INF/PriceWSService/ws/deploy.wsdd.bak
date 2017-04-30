@@ -1,0 +1,79 @@
+<!-- Use this file to deploy some handlers/chains and services      -->
+<!-- Two ways to do this:                                           -->
+<!--   java org.apache.axis.client.AdminClient deploy.wsdd          -->
+<!--      after the axis server is running                          -->
+<!-- or                                                             -->
+<!--   java org.apache.axis.utils.Admin client|server deploy.wsdd   -->
+<!--      from the same directory that the Axis engine runs         -->
+
+<deployment
+    xmlns="http://xml.apache.org/axis/wsdd/"
+    xmlns:java="http://xml.apache.org/axis/wsdd/providers/java">
+
+  <!-- Services from PriceWSService WSDL service -->
+
+  <service name="PriceWS" provider="java:RPC" style="wrapped" use="literal">
+      <parameter name="wsdlTargetNamespace" value="http://ws"/>
+      <parameter name="wsdlServiceElement" value="PriceWSService"/>
+      <parameter name="schemaQualified" value="http://ws,http://model"/>
+      <parameter name="wsdlServicePort" value="PriceWS"/>
+      <parameter name="className" value="ws.PriceWSSoapBindingImpl"/>
+      <parameter name="wsdlPortType" value="PriceWS"/>
+      <parameter name="typeMappingVersion" value="1.2"/>
+      <operation name="getpricetofrom" qname="operNS:getpricetofrom" xmlns:operNS="http://ws" returnQName="retNS:getpricetofromReturn" xmlns:retNS="http://ws" returnType="rtns:Price" xmlns:rtns="http://model" soapAction="" >
+        <parameter qname="pns:location_id_from" xmlns:pns="http://ws" type="tns:int" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:location_id_to" xmlns:pns="http://ws" type="tns:int" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <operation name="getpriceAll" qname="operNS:getpriceAll" xmlns:operNS="http://ws" returnQName="retNS:getpriceAllReturn" xmlns:retNS="http://ws" returnType="rtns:ArrayOf_xsd_anyType" xmlns:rtns="http://ws" returnItemQName="tns:item" xmlns:tns="http://ws" soapAction="" >
+      </operation>
+      <parameter name="allowedMethods" value="getpricetofrom getpriceAll"/>
+
+      <typeMapping
+        xmlns:ns="http://ws"
+        qname="ns:>getpriceAllResponse"
+        type="java:ws.GetpriceAllResponse"
+        serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+        deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+        encodingStyle=""
+      />
+      <typeMapping
+        xmlns:ns="http://ws"
+        qname="ns:>getpricetofromResponse"
+        type="java:ws.GetpricetofromResponse"
+        serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+        deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+        encodingStyle=""
+      />
+      <typeMapping
+        xmlns:ns="http://model"
+        qname="ns:Price"
+        type="java:model.Price"
+        serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+        deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+        encodingStyle=""
+      />
+      <typeMapping
+        xmlns:ns="http://ws"
+        qname="ns:>getpricetofrom"
+        type="java:ws.Getpricetofrom"
+        serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+        deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+        encodingStyle=""
+      />
+      <arrayMapping
+        xmlns:ns="http://ws"
+        qname="ns:ArrayOf_xsd_anyType"
+        type="java:java.lang.Object[]"
+        innerType="cmp-ns:anyType" xmlns:cmp-ns="http://www.w3.org/2001/XMLSchema"
+        encodingStyle=""
+      />
+      <typeMapping
+        xmlns:ns="http://ws"
+        qname="ns:>getpriceAll"
+        type="java:ws.GetpriceAll"
+        serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+        deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+        encodingStyle=""
+      />
+  </service>
+</deployment>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE orders SYSTEM "orders.dtd">
+<orders>
+	<order>
+		<order_id></order_id>
+		<order_date></order_date>
+		<customer_id></customer_id>
+		<employee_id></employee_id>
+		<truck_id></truck_id>
+		<is_special></is_special>
+		<purchase_order_number></purchase_order_number>
+		<order_total_amount></order_total_amount>
+	</order>
+</orders>

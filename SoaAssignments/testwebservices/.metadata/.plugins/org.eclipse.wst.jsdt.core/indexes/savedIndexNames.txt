@@ -1,0 +1,7 @@
+INDEX VERSION 1.3+C:\Users\Jyoti Shukla\myrepos\SoaAssignments\testwebservices\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+3756499263.index
+2791816080.index
+4249299055.index
+3116896957.index
+1167669007.index
+4212942090.index

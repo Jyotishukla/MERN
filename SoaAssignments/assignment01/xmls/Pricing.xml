@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE prices SYSTEM "prices.dtd">
+<prices>
+	<pricing>
+		<price_id>01</price_id>
+		<location_id_from>l_01</location_id_from>
+		<location_id_to>l_02</location_id_to>
+		<price>345</price>
+		<location_code_from>01</location_code_from>
+		<location_code_to>02</location_code_to>
+		<location_name_from>Chicago</location_name_from>
+		<location_name_to>Columbus</location_name_to>
+		<customer_id>01</customer_id>
+	</pricing>
+	
+	<pricing>
+		<price_id>02</price_id>
+		<location_id_from>l_02</location_id_from>
+		<location_id_to>l_01</location_id_to>
+		<price>349</price>
+		<location_code_from>02</location_code_from>
+		<location_code_to>02</location_code_to>
+		<location_name_from>Columbus</location_name_from>
+		<location_name_to>Chicago</location_name_to>
+		<customer_id>01</customer_id>
+	</pricing>
+</prices>

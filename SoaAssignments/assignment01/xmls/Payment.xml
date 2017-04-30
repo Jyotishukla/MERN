@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE payments SYSTEM "payments.dtd">
+<payments>
+	<payment>
+		<payment_id>01</payment_id>
+		<order_id>01</order_id>
+		<payment_method_id>01</payment_method_id>
+		<payment_amount>3000</payment_amount>
+		<payment_date>2016-08-01</payment_date>
+		<check_number>ABC001</check_number>
+		<credit_card>Y</credit_card>
+		<credit_card_number>123456777899990</credit_card_number>
+		<cardholder_name>Shrija_chavan</cardholder_name>
+		<creditcard_exp_date>2019-09-08</creditcard_exp_date>
+		<creaditcard_auth_num>415</creaditcard_auth_num>
+	</payment>
+	
+	<payment>
+		<payment_id>02</payment_id>
+		<order_id>02</order_id>
+		<payment_method_id>02</payment_method_id>
+		<payment_amount>6000</payment_amount>
+		<payment_date>2016-08-01</payment_date>
+		<check_number>ABC002</check_number>
+		<credit_card>Y</credit_card>
+		<credit_card_number>987632456789678</credit_card_number>
+		<cardholder_name>jyoti_shukla</cardholder_name>
+		<creditcard_exp_date>2020-09-08</creditcard_exp_date>
+		<creaditcard_auth_num>897</creaditcard_auth_num>
+	</payment>
+</payments>

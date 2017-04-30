@@ -1,0 +1,38 @@
+<?xml version = "1.0"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name='transactions'>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name='transaction' minOccurs='0' maxOccurs='unbounded' />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name='transaction'>
+	<xs:complexType>
+		<xs:sequence>
+			<xs:element name="transaction_id" type="xs:positiveInteger" />
+			<xs:element name="order_id" type="xs:positiveInteger" />
+			<xs:element name="price_id" type="xs:positiveInteger" />
+			<xs:element name="transaction_date" type="xs:date" />
+			<xs:element name="transaction_description" type="xs:string" />
+			<xs:element name="transaction_amount" type="xs:positiveInteger" />
+			<xs:element name="make" type="xs:string" />
+			<xs:element name="model" type="xs:string" />
+			<xs:element name="year" type="xs:positiveInteger" />
+			<xs:element name="employee_id" type="xs:positiveInteger" />
+			<xs:element name="truck_no" type="xs:positiveInteger" />
+			<xs:element name="discount" type="xs:string" />
+			<xs:element name="quantity" type="xs:positiveInteger" />
+			<xs:element name="unit_price" type="xs:positiveInteger" />
+			<xs:element name="driver_price" type="xs:positiveInteger" />
+			<xs:element name="vin" type="xs:positiveInteger" />
+			<xs:element name="run_number" type="xs:positiveInteger" />
+			<xs:element name="special" type="xs:string" />
+			<xs:element name="rate" type="xs:string" />							
+			<xs:element name="surcharge" type="xs:string" />
+		</xs:sequence>
+		 </xs:complexType>	
+		 </xs:element>	 
+</xs:schema>

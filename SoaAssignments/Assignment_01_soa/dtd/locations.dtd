@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ELEMENT locations (location)+>
+
+<!ELEMENT location (location_id, location_name, location_code, is_auction, customer_id, address_street1, address_street2, city, state, postal_code, region, location_contact_name, location_phone, location_fax_number, location_email ) >
+
+<!ELEMENT location_id (#PCDATA)>
+<!ELEMENT location_name (#PCDATA)>
+<!ELEMENT location_code (#PCDATA)>
+<!ELEMENT is_auction (#PCDATA)>
+<!ELEMENT customer_id (#PCDATA)>
+<!ELEMENT address_street1 (#PCDATA)>
+<!ELEMENT address_street2 (#PCDATA)>
+<!ELEMENT city (#PCDATA)>
+<!ELEMENT state (#PCDATA)>
+<!ELEMENT postal_code (#PCDATA)>
+<!ELEMENT region (#PCDATA)>
+<!ELEMENT location_contact_name (#PCDATA)>
+<!ELEMENT location_phone (#PCDATA)>
+<!ELEMENT location_fax_number (#PCDATA)>
+<!ELEMENT location_email (#PCDATA)>

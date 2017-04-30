@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ELEMENT transactions (transaction)+>
+
+<!ELEMENT transaction (transaction_id, order_id, price_id, transaction_date, transaction_description, transaction_amount, make, model, year, employee_id, truck_no, discount, quantity, unit_price, driver_price, vin, run_number, special, rate, surcharge ) >
+
+<!ELEMENT transaction_id (#PCDATA)>
+<!ELEMENT order_id (#PCDATA)>
+<!ELEMENT price_id (#PCDATA)>
+<!ELEMENT transaction_date (#PCDATA)>
+<!ELEMENT transaction_description (#PCDATA)>
+<!ELEMENT transaction_amount (#PCDATA)>
+<!ELEMENT make (#PCDATA)>
+<!ELEMENT  model (#PCDATA)>
+<!ELEMENT year (#PCDATA)>
+<!ELEMENT employee_id (#PCDATA)>
+<!ELEMENT truck_no (#PCDATA)>
+<!ELEMENT discount (#PCDATA)>
+<!ELEMENT quantity (#PCDATA)>
+<!ELEMENT unit_price (#PCDATA)>
+<!ELEMENT driver_price (#PCDATA)>
+<!ELEMENT vin (#PCDATA)>
+<!ELEMENT run_number (#PCDATA)>
+<!ELEMENT special (#PCDATA)>
+<!ELEMENT rate (#PCDATA)>
+<!ELEMENT surcharge (#PCDATA)>

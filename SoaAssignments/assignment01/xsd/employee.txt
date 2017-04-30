@@ -1,0 +1,37 @@
+<?xml version = "1.0"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name='employees'>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name='employee' minOccurs='0' maxOccurs='unbounded' />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name='employee'>
+	<xs:complexType>
+		<xs:sequence>
+			<xs:element name="employee_id" type="xs:positiveInteger" />
+			<xs:element name="first_name" type="xs:string" />
+			<xs:element name="last_name" type="xs:string" />
+			<xs:element name="email" type="xs:string" />
+			<xs:element name="extension" type="xs:string" />
+			<xs:element name="home_phone" type="xs:positiveInteger" />
+			<xs:element name="cell_phone" type="xs:positiveInteger" />
+			<xs:element name="jobtitle" type="xs:string" />
+			<xs:element name="ssn" type="xs:string" />
+			<xs:element name="driver_license_number" type="xs:string" />
+			<xs:element name="address" type="xs:string" />
+			<xs:element name="city" type="xs:string" />
+			<xs:element name="state" type="xs:string" />
+			<xs:element name="postal_code" type="xs:positiveInteger" />
+			<xs:element name="birth_date" type="xs:date" />
+			<xs:element name="date_hired" type="xs:date" />
+			<xs:element name="salary" type="xs:positiveInteger" />
+			<xs:element name="notes" type="xs:string" />
+			
+		</xs:sequence>
+		 </xs:complexType>	
+		 </xs:element>	 
+</xs:schema>

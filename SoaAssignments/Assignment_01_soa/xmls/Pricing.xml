@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE prices SYSTEM "prices.dtd">
+<prices>
+	<pricing>
+		<price_id></price_id>
+		<location_id_from></location_id_from>
+		<location_id_to></location_id_to>
+		<price></price>
+		<location_code_from></location_code_from>
+		<location_code_to></location_code_to>
+		<location_name_from></location_name_from>
+		<location_name_to></location_name_to>
+		<customer_id></customer_id>
+	</pricing>
+</prices>

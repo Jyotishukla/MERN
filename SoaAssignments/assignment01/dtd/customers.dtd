@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT customers (customer)+>
+
+<!ELEMENT customer(customer_id, cutomer_title, business_name, billing_address, city, state, postal_code,country, phone_number,  cell_number, other_number, fax_number,email_address, customer_type, company_name, contact_name, alternate_contact_name, date_entered) >
+
+<!ELEMENT customer_id (#PCDATA)>
+<!ELEMENT cutomer_title (#PCDATA) >
+<!ELEMENT business_name (#PCDATA) >
+<!ELEMENT billing_address (#PCDATA) >
+<!ELEMENT  city (#PCDATA) >
+<!ELEMENT state (#PCDATA) >
+<!ELEMENT postal_code (#PCDATA) >
+<!ELEMENT country (#PCDATA) >
+<!ELEMENT phone_number (#PCDATA) >
+<!ELEMENT cell_number (#PCDATA) >
+<!ELEMENT other_number (#PCDATA) >
+<!ELEMENT fax_number (#PCDATA) >
+<!ELEMENT email_address (#PCDATA) >
+<!ELEMENT customer_type (#PCDATA) >
+<!ELEMENT company_name (#PCDATA) >
+<!ELEMENT contact_name (#PCDATA) >
+<!ELEMENT alternate_contact_name (#PCDATA) >
+<!ELEMENT date_entered (#PCDATA) >

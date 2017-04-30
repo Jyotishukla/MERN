@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE transactions SYSTEM "transactions.dtd">
+<transactions>
+	<transaction>
+		<transaction_id></transaction_id>
+		<order_id></order_id>
+		<price_id></price_id>
+		<transaction_date></transaction_date>
+		<transaction_description></transaction_description>
+		<transaction_amount></transaction_amount>
+		<make></make>
+		<model></model>
+		<year></year>
+		<employee_id></employee_id>
+		<truck_no></truck_no>
+		<discount></discount>
+		<quality></quality>
+		<unit_price></unit_price>
+		<driver_pric></driver_pric>
+		<vin></vin>
+		<run_number></run_number>
+		<special></special>
+		<rate></rate>
+		<special></special>
+		<rate></rate>
+		<surcharge></surcharge>
+	</transaction>
+</transactions>

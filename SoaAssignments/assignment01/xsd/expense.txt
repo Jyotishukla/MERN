@@ -1,0 +1,29 @@
+<?xml version = "1.0"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name='expenses'>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name='expense' minOccurs='0' maxOccurs='unbounded' />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name='expense'>
+	<xs:complexType>
+		<xs:sequence>
+			<xs:element name="expense_id" type="xs:positiveInteger" />
+			<xs:element name="employee_id" type="xs:positiveInteger" />
+			<xs:element name="expense_type" type="xs:string" />
+			<xs:element name="purpose_of_expense" type="xs:string" />
+			<xs:element name="amount_spent" type="xs:positiveInteger" />
+			<xs:element name="description" type="xs:positiveInteger" />
+			<xs:element name="date_purchase" type="xs:date" />
+			<xs:element name="date_submitted" type="xs:date" />
+			<xs:element name="advanced_amount" type="xs:positiveInteger" />
+			<xs:element name="payment_method" type="xs:string" />
+				
+		</xs:sequence>
+		 </xs:complexType>	
+		 </xs:element>	 
+</xs:schema>

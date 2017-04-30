@@ -1,0 +1,27 @@
+<?xml version = "1.0"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name='orders'>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name='order' minOccurs='0' maxOccurs='unbounded' />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name='order'>
+	<xs:complexType>
+		<xs:sequence>
+			<xs:element name="order_id" type="xs:positiveInteger" />
+			<xs:element name="order_date" type="xs:date" />
+			<xs:element name="customer_id" type="xs:positiveInteger" />
+			<xs:element name="employee_id" type="xs:positiveInteger" />
+			<xs:element name="truck_id" type="xs:positiveInteger" />
+			<xs:element name="is_special" type="xs:string" />
+			<xs:element name="purchase_order_numer" type="xs:positiveInteger" />
+			<xs:element name="order_total_amount" type="xs:positiveInteger" />
+				
+		</xs:sequence>
+		 </xs:complexType>	
+		 </xs:element>	 
+</xs:schema>

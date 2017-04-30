@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT comments (comment_body)+>
+<!ELEMENT comment_body (comment_id, comment_time, comment , comment_type) >
+<!ELEMENT comment_id (#PCDATA)>
+<!ELEMENT comment_time (#PCDATA)>
+<!ELEMENT comment (#PCDATA)>
+<!ELEMENT comment_type (#PCDATA)>

@@ -1,0 +1,28 @@
+<?xml version = "1.0"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name='prices'>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name='pricing' minOccurs='0' maxOccurs='unbounded' />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name='pricing'>
+	<xs:complexType>
+		<xs:sequence>
+			<xs:element name="price_id" type="xs:positiveInteger" />
+			<xs:element name="location_id_from" type="xs:positiveInteger" />
+			<xs:element name="location_id_to" type="xs:positiveInteger" />
+			<xs:element name="price" type="xs:string" />
+			<xs:element name="location_code_from" type="xs:string" />
+			<xs:element name="location_code_to" type="xs:string" />
+			<xs:element name="location_name_from" type="xs:string" />
+			<xs:element name="location_name_to" type="xs:string" />
+			<xs:element name="customer_id" type="xs:positiveInteger" />
+							
+		</xs:sequence>
+		 </xs:complexType>	
+		 </xs:element>	 
+</xs:schema>

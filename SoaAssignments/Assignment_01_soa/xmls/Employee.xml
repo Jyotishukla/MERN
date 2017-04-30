@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE employees SYSTEM "employees.dtd">
+<employees>
+	<employee>
+		<employee_id>e_01</employee_id>
+		<first_name>John</first_name>
+		<last_name>Smith</last_name>
+		<email>john@gmail.com</email>
+		<extension>+1</extension>
+		<home_phone>3128682245</home_phone>
+		<cell_phone>3214567890</cell_phone>
+		<jobtitle>Manager</jobtitle>
+		<ssn>345678900</ssn>
+		<driver_license_number>A1234567</driver_license_number>
+		<address>505E, 47th st, #789</address>
+		<city>Chicago</city>
+		<state>Illinos</state>
+		<postal_code>60616</postal_code>
+		<birth_date>12-12-1994</birth_date>
+		<date_hired>06-01-2017</date_hired>
+		<salary>55000</salary>
+		<notes>Employee-1</notes>
+	</employee>
+		<employee>
+		<employee_id>e_02</employee_id>
+		<first_name>Willam</first_name>
+		<last_name>Smith</last_name>
+		<email>willam@gmail.com</email>
+		<extension>+1</extension>
+		<home_phone>3128682345</home_phone>
+		<cell_phone>321456490</cell_phone>
+		<jobtitle>Execute Manager</jobtitle>
+		<ssn>34567867</ssn>
+		<driver_license_number>B345678</driver_license_number>
+		<address>506E, 48th st, #700</address>
+		<city>Chicago</city>
+		<state>Illinos</state>
+		<postal_code>60616</postal_code>
+		<birth_date>10-12-1994</birth_date>
+		<date_hired>08-01-2017</date_hired>
+		<salary>65000</salary>
+		<notes>Employee-2</notes>
+	</employee>
+</employees>

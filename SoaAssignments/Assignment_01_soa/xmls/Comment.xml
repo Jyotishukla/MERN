@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- <!DOCTYPE comments SYSTEM "comments.dtd">  -->
+<comments>
+	<comment_body>
+		<comment_id>C0_01</comment_id>
+		<comment_time>16:02</comment_time>
+		<comment>Awesome experience</comment>
+		<comment_type>Customer</comment_type>
+	</comment_body>
+	<comment_body>
+		<comment_id>C0_02</comment_id>
+		<comment_time>20:02</comment_time>
+		<comment>Transactions failed</comment>
+		<comment_type>Transactions</comment_type>
+	</comment_body>
+</comments>
+

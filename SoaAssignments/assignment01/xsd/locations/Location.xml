@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone ="no"?>
+
+<locations 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="Locations.xsd">
+
+<!-- <!DOCTYPE locations SYSTEM "locations.dtd"> ! -->
+
+		<location>
+			<location_id>l_01</location_id>
+			<location_name>Chicago</location_name>
+			<location_code>01</location_code>
+			<is_auction>yes</is_auction>
+			<customer_id>01</customer_id>
+			<address_street1>401E,</address_street1>
+			<address_street2>56thst</address_street2>
+			<city>Phenoix</city>
+			<state>Arizona</state>
+			<postal_code>60617</postal_code>
+			<region>East</region>
+			<location_contact_name>Will</location_contact_name>
+			<location_phone>452345678</location_phone>
+			<location_fax_number>9867543</location_fax_number>
+			<location_email>will@gmail.com</location_email>
+		</location>
+		<location>
+			<location_id>l_02</location_id>
+			<location_name>Columbas</location_name>
+			<location_code>02</location_code>
+			<is_auction>yes</is_auction>
+			<customer_id>02</customer_id>
+			<address_street1>501E,</address_street1>
+			<address_street2>57thst</address_street2>
+			<city>Chicago</city>
+			<state>illinos</state>
+			<postal_code>60616</postal_code>
+			<region>Central</region>
+			<location_contact_name>Willam</location_contact_name>
+			<location_phone>76234567</location_phone>
+			<location_fax_number>789867543</location_fax_number>
+			<location_email>willam@gmail.com</location_email>
+		</location>
+
+	</locations>

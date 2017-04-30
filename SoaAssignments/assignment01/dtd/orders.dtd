@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT orders (order)+>
+
+<!ELEMENT order (order_id, order_date, customer_id, employee_id, truck_id, is_special, purchase_order_number, order_total_amount) >
+
+<!ELEMENT order_id (#PCDATA)>
+<!ELEMENT order_date (#PCDATA)>
+<!ELEMENT customer_id(#PCDATA)>
+<!ELEMENT employee_id (#PCDATA)>
+<!ELEMENT truck_id (#PCDATA)>
+<!ELEMENT is_special(#PCDATA)>
+<!ELEMENT purchase_order_number(#PCDATA)>
+<!ELEMENT order_total_amount (#PCDATA)>

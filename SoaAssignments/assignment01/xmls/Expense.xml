@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE expenses SYSTEM "expenses.dtd">
+<expenses>
+	<expense>
+		<expense_id>ex_01</expense_id>
+		<employee_id>e_01</employee_id>
+		<expense_type>Regular</expense_type>
+		<purpose_of_expense>Staffing</purpose_of_expense>
+		<amount_spent>45678</amount_spent>
+		<description>On raw material</description>
+		<date_purchased>02-06-2016</date_purchased>
+		<date_submitted>02-06-2017</date_submitted>
+		<advance_amount>2345</advance_amount>
+		<payment_method>e-check</payment_method>
+	</expense>
+		<expense>
+		<expense_id>ex_02</expense_id>
+		<employee_id>e_02</employee_id>
+		<expense_type>Regular</expense_type>
+		<purpose_of_expense>Production</purpose_of_expense>
+		<amount_spent>78654</amount_spent>
+		<description>Productions</description>
+		<date_purchased>03-06-2016</date_purchased>
+		<date_submitted>03-06-2017</date_submitted>
+		<advance_amount>5678</advance_amount>
+		<payment_method>e-check</payment_method>
+	</expense>
+</expenses>

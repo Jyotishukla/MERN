@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE trucks SYSTEM "trucks.dtd">
+<trucks>
+	<truck>
+		<truck_id>01</truck_id>
+		<make>ultima</make>	
+		<year>2007</year>
+		<model>charger</model>
+		<license_plate_no>IL001</license_plate_no>
+		<employee_id>e_01</employee_id>
+		<color>blue</color>
+	</truck>
+	
+	<truck>
+		<truck_id>02</truck_id>
+		<make>ford</make>	
+		<year>2008</year>
+		<model>charger</model>
+		<license_plate_no>IL002</license_plate_no>
+		<employee_id>e_02</employee_id>
+		<color>blue</color>
+	</truck>
+</trucks>

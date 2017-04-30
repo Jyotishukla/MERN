@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE orders SYSTEM "orders.dtd">
+<orders>
+	<order>
+		<order_id>01</order_id>
+		<order_date>1978-06-01</order_date>
+		<customer_id>01</customer_id>
+		<employee_id>e_01</employee_id>
+		<truck_id>01</truck_id>
+		<is_special>NA</is_special>
+		<purchase_order_number>PO_101</purchase_order_number>
+		<order_total_amount>7067</order_total_amount>
+	</order>
+	
+	<order>
+		<order_id>02</order_id>
+		<order_date>1965-05-02</order_date>
+		<customer_id>02</customer_id>
+		<employee_id>e_02</employee_id>
+		<truck_id>02</truck_id>
+		<is_special>NA</is_special>
+		<purchase_order_number>PO_102</purchase_order_number>
+		<order_total_amount>9087</order_total_amount>
+	</order>
+</orders>

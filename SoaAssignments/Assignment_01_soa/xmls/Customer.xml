@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<customers>
+	<customer>
+		<customer_id>01</customer_id>
+		<customer_title>Ms.</customer_title>
+		<buisness_name>Staffing</buisness_name>
+		<billing_address>401 E, 32nd St</billing_address>
+		<city>Chicago</city>
+		<state>Illnois</state>
+		<postal_code>60616</postal_code>
+		<country>United states</country>
+		<phone_no>3128682204</phone_no>
+		<cell_number>3125467896</cell_number>
+		<other_number>3124578900</other_number>
+		<fax_number>234569789</fax_number>
+		<email_address>custom1@gmail.com</email_address>
+		<customer_type>Regular</customer_type>
+		<company_type>Trading</company_type>
+		<contact_name>Shrija</contact_name>
+		<alternate_contactname>Chavan</alternate_contactname>
+		<date_entered>02/16/2017</date_entered>
+	</customer>
+		<customer>
+		<customer_id>02</customer_id>
+		<customer_title>Ms.</customer_title>
+		<buisness_name>Consulting</buisness_name>
+		<billing_address>401 E, 33nd St</billing_address>
+		<city>Chicago</city>
+		<state>Illnois</state>
+		<postal_code>60616</postal_code>
+		<country>United states</country>
+		<phone_no>3128682205</phone_no>
+		<cell_number>3125467893</cell_number>
+		<other_number>3124578901</other_number>
+		<fax_number>234569787</fax_number>
+		<email_address>custom1@gmail.com</email_address>
+		<customer_type>Regular</customer_type>
+		<company_type>Trading_Recuriting</company_type>
+		<contact_name>Jyoti</contact_name>
+		<alternate_contactname>Shukla</alternate_contactname>
+		<date_entered>02/16/2017</date_entered>
+	</customer>
+	
+</customers>

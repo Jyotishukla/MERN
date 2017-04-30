@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT trucks (truck)+>
+
+<!ELEMENT truck (truck_id, make, year, model , license_plate_no, employee_id , color , vin  ) >
+
+<!ELEMENT truck_id (#PCDATA)>
+<!ELEMENT make (#PCDATA)>
+<!ELEMENT year (#PCDATA)>
+<!ELEMENT model (#PCDATA)>
+<!ELEMENT license_plate_num (#PCDATA)>
+<!ELEMENT employee_id (#PCDATA)>
+<!ELEMENT color (#PCDATA)>
+<!ELEMENT vin (#PCDATA)>

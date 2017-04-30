@@ -1,0 +1,30 @@
+<?xml version = "1.0"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name='payments'>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name='payment' minOccurs='0' maxOccurs='unbounded' />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name='payment'>
+	<xs:complexType>
+		<xs:sequence>
+			<xs:element name="payment_id" type="xs:positiveInteger" />
+			<xs:element name="order_id" type="xs:positiveInteger" />
+			<xs:element name="payment_method_id" type="xs:positiveInteger" />
+			<xs:element name="payment_amount" type="xs:string" />
+			<xs:element name="payment_date" type="xs:date" />
+			<xs:element name="check_number" type="xs:string" />
+			<xs:element name="credit_card" type="xs:string" />
+			<xs:element name="credit_card_number" type="xs:positiveInteger" />
+			<xs:element name="cardholder_name" type="xs:string" />
+			<xs:element name="creditcard_exp_date" type="xs:date" />
+			<xs:element name="creditcard_auth_num" type="xs:string" />
+				
+		</xs:sequence>
+		 </xs:complexType>	
+		 </xs:element>	 
+</xs:schema>

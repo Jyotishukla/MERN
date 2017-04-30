@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT employees  (employee)+>
+
+<!ELEMENT employee (employee_id , first_name, last_name, email, extension, home_phone , cell_phone, jobtitle, ssn , driver_license_number , address , city , state , postal_code , birth_date, date_hired , salary , notes )>
+
+<!ELEMENT employee_id (#PCDATA)>
+<!ELEMENT first_name (#PCDATA)>
+<!ELEMENT last_name (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT extension (#PCDATA)>
+<!ELEMENT home_phone (#PCDATA)>
+<!ELEMENT cell_phone (#PCDATA)>
+<!ELEMENT jobtitle (#PCDATA)>
+<!ELEMENT ssn (#PCDATA)>
+<!ELEMENT driver_license_number (#PCDATA)>
+<!ELEMENT address (#PCDATA)>
+<!ELEMENT city (#PCDATA)>
+<!ELEMENT state (#PCDATA)>
+<!ELEMENT postal_code (#PCDATA)>
+<!ELEMENT birth_date (#PCDATA)>
+<!ELEMENT date_hired (#PCDATA)>
+<!ELEMENT salary (#PCDATA)>
+<!ELEMENT notes (#PCDATA)>

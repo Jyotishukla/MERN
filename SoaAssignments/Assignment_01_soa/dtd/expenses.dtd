@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT expenses  (expense)+>
+
+<!ELEMENT expense (expense_id, employee_id, expense_type , purpose_of_expense, amount_spent, description, date_purchase , date_submitted , advanced_amount , payment_method) >
+
+<!ELEMENT expense_id (#PCDATA)>
+<!ELEMENT employee_id (#PCDATA)>
+<!ELEMENT expense_type (#PCDATA)>
+<!ELEMENT purpose_of_expense (#PCDATA)>
+<!ELEMENT amount_spent (#PCDATA)>
+<!ELEMENT description (#PCDATA)>
+<!ELEMENT date_purchase (#PCDATA)>
+<!ELEMENT date_submitted (#PCDATA)>
+<!ELEMENT advanced_amount (#PCDATA)>
+<!ELEMENT payment_method (#PCDATA)>
+

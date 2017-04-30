@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions targetNamespace="http://ws" xmlns:apachesoap="http://xml.apache.org/xml-soap" xmlns:impl="http://ws" xmlns:intf="http://ws" xmlns:tns1="http://model" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<!--WSDL created by Apache Axis version: 1.4
+Built on Apr 22, 2006 (06:55:48 PDT)-->
+ <wsdl:types>
+  <schema elementFormDefault="qualified" targetNamespace="http://ws" xmlns="http://www.w3.org/2001/XMLSchema">
+   <import namespace="http://model"/>
+   <element name="getpricetofrom">
+    <complexType>
+     <sequence>
+      <element name="location_id_from" type="xsd:int"/>
+      <element name="location_id_to" type="xsd:int"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="getpricetofromResponse">
+    <complexType>
+     <sequence>
+      <element name="getpricetofromReturn" type="tns1:Price"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="getpriceAll">
+    <complexType/>
+   </element>
+   <element name="getpriceAllResponse">
+    <complexType>
+     <sequence>
+      <element name="getpriceAllReturn" type="impl:ArrayOf_xsd_anyType"/>
+     </sequence>
+    </complexType>
+   </element>
+   <complexType name="ArrayOf_xsd_anyType">
+    <sequence>
+     <element maxOccurs="unbounded" minOccurs="0" name="item" type="xsd:anyType"/>
+    </sequence>
+   </complexType>
+  </schema>
+  <schema elementFormDefault="qualified" targetNamespace="http://model" xmlns="http://www.w3.org/2001/XMLSchema">
+   <import namespace="http://ws"/>
+   <complexType name="Price">
+    <sequence>
+     <element name="location_code_from" nillable="true" type="xsd:string"/>
+     <element name="location_code_to" nillable="true" type="xsd:string"/>
+     <element name="location_id" type="xsd:int"/>
+     <element name="location_id_from" type="xsd:int"/>
+     <element name="location_id_to" type="xsd:int"/>
+     <element name="price" nillable="true" type="xsd:string"/>
+     <element name="price_id" type="xsd:int"/>
+    </sequence>
+   </complexType>
+  </schema>
+ </wsdl:types>
+
+   <wsdl:message name="getpriceAllRequest">
+
+      <wsdl:part element="impl:getpriceAll" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getpricetofromResponse">
+
+      <wsdl:part element="impl:getpricetofromResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getpricetofromRequest">
+
+      <wsdl:part element="impl:getpricetofrom" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getpriceAllResponse">
+
+      <wsdl:part element="impl:getpriceAllResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:portType name="PriceWS">
+
+      <wsdl:operation name="getpricetofrom">
+
+         <wsdl:input message="impl:getpricetofromRequest" name="getpricetofromRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:getpricetofromResponse" name="getpricetofromResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getpriceAll">
+
+         <wsdl:input message="impl:getpriceAllRequest" name="getpriceAllRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:getpriceAllResponse" name="getpriceAllResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+   </wsdl:portType>
+
+   <wsdl:binding name="PriceWSSoapBinding" type="impl:PriceWS">
+
+      <wsdlsoap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+
+      <wsdl:operation name="getpricetofrom">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="getpricetofromRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="getpricetofromResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getpriceAll">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="getpriceAllRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="getpriceAllResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+   </wsdl:binding>
+
+   <wsdl:service name="PriceWSService">
+
+      <wsdl:port binding="impl:PriceWSSoapBinding" name="PriceWS">
+
+         <wsdlsoap:address location="http://localhost:9090/SoaProj/services/PriceWS"/>
+
+      </wsdl:port>
+
+   </wsdl:service>
+
+</wsdl:definitions>

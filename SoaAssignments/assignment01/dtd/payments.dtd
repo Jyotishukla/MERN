@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT payments (payment)+>
+
+<!ELEMENT payment (payment_id, order_id, payment_method_id, payment_amount, payment_date, check_number, credit_card, credit_card_number, cardholder_name, creditcard_exp_date, creditcard_auth_num ) >
+
+<!ELEMENT payment_id (#PCDATA)>
+<!ELEMENT order_id (#PCDATA)>
+<!ELEMENT payment_method_id, (#PCDATA)>
+<!ELEMENT payment_amount (#PCDATA)>
+<!ELEMENT payment_date (#PCDATA)>
+<!ELEMENT check_number (#PCDATA)>
+<!ELEMENT credit_card (#PCDATA)>
+<!ELEMENT credit_card_number (#PCDATA)>
+<!ELEMENT cardholder_name (#PCDATA)>
+<!ELEMENT creditcard_exp_date (#PCDATA)>
+<!ELEMENT creditcard_auth_num (#PCDATA)>
